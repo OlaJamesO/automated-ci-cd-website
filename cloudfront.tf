@@ -13,7 +13,7 @@ module "cloudfront" {
   create_origin_access_identity = true
 
   origin_access_identities = {
-    s3_bucket_one = "My CloudFront can access"
+    s3_bucket_one = "CloudFront access"
   }
 
   origin = {
@@ -41,7 +41,7 @@ module "cloudfront" {
   }
 
   viewer_certificate = {
-    acm_certificate_arn = "arn:aws:acm:us-east-1:802607305497:certificate/37d56928-12e3-4e46-9b49-601b8b0ebbca"
+    acm_certificate_arn = var.acm_certificate_arn
     ssl_support_method = "sni-only"
   }
 }
