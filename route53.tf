@@ -1,10 +1,10 @@
 resource "aws_route53_zone" "zone" {
-  name = "jameso.tech."
+  name = "olajames.com."
 }
 
 resource "aws_route53_record" "record" {
   zone_id = aws_route53_zone.zone.zone_id
-  name    = "terramino.jameso.tech"
+  name    = "tictactoe.olajames.com"
   type    = "A"
   alias {
     name                   = module.cloudfront.cloudfront_distribution_domain_name
