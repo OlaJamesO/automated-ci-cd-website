@@ -1,7 +1,7 @@
 module "cloudfront" {
   source = "terraform-aws-modules/cloudfront/aws"
 
-  aliases = ["terramino.jameso.tech"]
+  aliases = ["tictactoe.olajames.com"]
 
   comment             = "My CloudFront"
   enabled             = true
