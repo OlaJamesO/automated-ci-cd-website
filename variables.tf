@@ -1,9 +1,9 @@
 variable "domain" {
-  default = "terramino.jameso.tech"
+  default = "tictactoe.olajames.com"
 }
 
 variable "bucket_name" {
-  default = "terramino.jameso.tech"
+  default = "tictactoe.olajames.com"
 }
 
 variable "aws_region" {
